@@ -33,6 +33,9 @@ const GetAllOrders = (inquiry) => {
     //stuff
     let ordersRef = db.collection("orders");
 
+    //query get stuff where email = ____
+    // "then" is a promise, lets it know when its done due to latiency. 
+    //inquiry callback 
     ordersRef.where("email", "==", `${inquiry.email}`).get()
             .then( (querySnapshot) => {
                 if(!querySnapshot.empty){

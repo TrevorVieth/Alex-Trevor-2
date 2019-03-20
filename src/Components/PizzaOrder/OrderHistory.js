@@ -61,7 +61,7 @@ class OrderHistory extends Component{
             }
         }
     
-        //call the DB method
+        //call the DB method - came from top 
         GetAllOrders(ordersInquiry);
     }
 
